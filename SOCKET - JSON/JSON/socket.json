@@ -1,0 +1,25 @@
+{
+    "pageTitle": "Cos'è una Socket?",
+    "pageDescription": "Un'introduzione al concetto di socket e al suo ruolo nella comunicazione di rete.",
+    "socket": {
+        "description": "Le socket sono uno dei concetti fondamentali nella programmazione di rete. Esse consentono la comunicazione tra dispositivi su una rete, agendo come un punto di accesso per inviare e ricevere dati tra applicazioni.",
+        "links": [
+            {
+                "img": "/IMG/tipologie_socket.jpg",
+                "name": "Tipologia di Socket",
+                "description": "Scopri le diverse tipologie di socket e come vengono utilizzate nei sistemi di rete.",
+                "href": "socket-types.html"
+            },
+            {
+                "img": "/IMG/process_communication.jpg",
+                "name": "Processo di Comunicazione",
+                "description": "Scopri come avviene la comunicazione tra client e server utilizzando le socket.",
+                "href": "communication-process.html"
+            }
+        ]
+    },
+    "footer": {
+        "text": "Realizzato da: Bernardinello Tommaso - Classe 5E",
+        "smallText": "&copy; 2024 Socket Learning. All rights reserved."
+    }
+}

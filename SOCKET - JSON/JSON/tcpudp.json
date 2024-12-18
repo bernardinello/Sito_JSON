@@ -1,0 +1,28 @@
+{
+  "pageTitle": "TCP vs UDP",
+  "navbar": {
+    "links": [
+      { "text": "Home", "href": "index.html" },
+      { "text": "Cos'è una Socket?", "href": "socket.html" },
+      { "text": "Modello OSI", "href": "osi.html" },
+      { "text": "TCP vs UDP", "href": "tcpudp.html" },
+      { "text": "Glossario", "href": "glossario.html" }
+    ]
+  },
+  "pageDescription": "Confronto tra i due principali protocolli di trasporto: TCP e UDP.",
+  "tcpUdpDifferences": [
+    {
+      "name": "TCP",
+      "description": "Protocollo orientato alla connessione, garantisce affidabilità e ordinamento dei pacchetti.",
+      "class": "primary"
+    },
+    {
+      "name": "UDP",
+      "description": "Protocollo senza connessione, più veloce ma meno affidabile.",
+      "class": "secondary"
+    }
+  ],
+  "footer": {
+    "text": "Realizzato da: Bernardinello Tommaso - Classe 5E"
+  }
+}

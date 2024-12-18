@@ -1,0 +1,104 @@
+/* Hero Section - Sfondo colorato */
+.hero-section {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+    border-bottom: 5px solid #ffc107;
+}
+
+/* Titolo e sottotitolo nella hero section */
+.hero-section h1, .hero-section p {
+    color: #ffffff; /* Colore bianco */
+    font-style: italic; /* Rende il testo in corsivo */
+}
+/* Mostra il menu a tendina al passaggio del mouse */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Mostra il menu */
+    margin-top: 0; /* Rimuove eventuale margine */
+    opacity: 1; /* Aggiungi transizione */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Navbar - colore di sfondo e ombre */
+.navbar {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Link nella navbar */
+.nav-link {
+    color: #333333; /* Colore di base */
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Colore al passaggio del mouse */
+.nav-link:hover {
+    background-color: #007bff; /* Sfondo blu */
+    color: white; /* Testo bianco */
+}
+
+/* Immagine */
+img {
+    max-width: 90%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Contenitore */
+.container {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Aggiungi uno stile al footer */
+footer {
+    background-color: #f1f1f1;
+    font-size: 1rem;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Personalizzazione del menu a tendina */
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    background-color: #ffffff; /* Colore di sfondo del menu */
+    border-radius: 0.375rem; /* Arrotonda gli angoli del menu */
+    border: 1px solid #dee2e6; /* Aggiungi un bordo grigio chiaro */
+}
+
+/* Hover sul menu a tendina */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Mostra il menu al passaggio del mouse */
+}
+
+/* Modifica il colore del link quando passa sopra */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff; /* Colore blu per il link al passaggio del mouse */
+}
+
+/* Aggiungi ombra alla sezione del contenuto */
+.shadow-box {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+/* Stile del codice per una lettura migliore */
+/* Sfondo nero per il codice */
+pre code {
+    background-color: #343a40; /* Colore di sfondo nero */
+    color: #ffffff; /* Testo bianco per contrasto */
+    border-radius: 5px;
+    padding: 15px;
+    overflow-x: auto;
+    font-size: 1rem;
+    display: block;
+}
+
+

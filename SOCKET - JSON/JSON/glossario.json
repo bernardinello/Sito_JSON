@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Glossario - Socket Learning",
+  "navbar": {
+    "links": [
+      { "text": "Home", "href": "index.html" },
+      { "text": "Cos'è una Socket?", "href": "socket.html" },
+      { "text": "Modello OSI", "href": "osi.html" },
+      { "text": "TCP vs UDP", "href": "tcpudp.html" },
+      { "text": "Glossario", "href": "glossario.html" }
+    ]
+  },
+  "pageDescription": "Definizioni dei principali termini utilizzati nelle comunicazioni di rete.",
+  "glossaryItems": [
+    {
+      "term": "Socket",
+      "definition": "Un endpoint per la comunicazione tra due macchine su una rete.",
+      "link": "https://it.wikipedia.org/wiki/Socket_(reti)"
+    },
+    {
+      "term": "TCP",
+      "definition": "Un protocollo di comunicazione affidabile e orientato alla connessione.",
+      "link": "https://it.wikipedia.org/wiki/Transmission_Control_Protocol"
+    },
+    {
+      "term": "UDP",
+      "definition": "Un protocollo di comunicazione non affidabile e senza connessione.",
+      "link": "https://it.wikipedia.org/wiki/User_Datagram_Protocol"
+    },
+    {
+      "term": "Modello OSI",
+      "definition": "Un modello di riferimento che definisce come i dati vengono trasmessi su una rete, suddiviso in 7 strati.",
+      "link": "https://it.wikipedia.org/wiki/Modello_OSI"
+    },
+    {
+      "term": "IP",
+      "definition": "Il protocollo che gestisce l'indirizzamento e il routing dei pacchetti tra i dispositivi di rete.",
+      "link": "https://it.wikipedia.org/wiki/Internet_Protocol"
+    }
+  ],
+  "footer": {
+    "text": "Realizzato da: Bernardinello Tommaso - Classe 5E"
+  }
+}

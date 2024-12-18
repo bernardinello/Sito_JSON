@@ -1,0 +1,54 @@
+{
+    "pageTitle": "Codice Server - Cos'è una Socket?",
+    "navbar": {
+      "brand": "Socket Learning",
+      "links": [
+        { "text": "Home", "href": "index.html" },
+        {
+          "text": "Cos'è una Socket?",
+          "dropdown": true,
+          "items": [
+            { "text": "Introduzione", "href": "socket.html" },
+            { "text": "Codice Client", "href": "client-code.html" },
+            { "text": "Codice Server", "href": "server-code.html" }
+          ]
+        },
+        { "text": "Modello OSI", "href": "osi.html" },
+        { "text": "TCP vs UDP", "href": "tcpudp.html" },
+        { "text": "Glossario", "href": "glossario.html" }
+      ]
+    },
+    "pageDescription": "Il codice per implementare un server socket in C.",
+    "heroSection": {
+      "title": "Codice Server",
+      "subtitle": "Il codice per implementare un server socket in C."
+    },
+    "content": {
+      "sectionTitle": "Esempio di Codice Server",
+      "description": "Qui puoi vedere un esempio di codice server in C per creare una connessione socket con un server.",
+      "code": {
+        "language": "c",
+        "content": "SERVER\n#include <stdio.h>       //std in-out\n#include <stdlib.h>      //per utilizzo di certe funzioni:htonl,rand,....\n#include <sys/socket.h>  //funz. accept+bind+listen\n#include <sys/types.h>   //funz. accept\n#include <netinet/in.h>  //definiscono la struttura degli indirizzi \n#include <string.h>      //funz. stringhe\n#include <errno.h>       //gestioni errori connessione\n#include <ctype.h>       //bind\n#include <unistd.h>     // file header che consente l'accesso alle API dello standard POSIX\n\n#define DIM 50\n#define SERVERPORT 1313\n\nint main()\n{\n    struct sockaddr_in servizio, addr_remoto;  // record con i dati del server e del client\n    servizio.sin_family=AF_INET;\n    servizio.sin_addr.s_addr=htonl(INADDR_ANY);\n    servizio.sin_port=htons(SERVERPORT);\n    int socketfd, soa, fromlen=sizeof(servizio);\n    char str[DIM];\n\n    socketfd=socket(AF_INET,SOCK_STREAM,0);\n    bind(socketfd,(struct sockaddr*)&servizio,sizeof(servizio));\n    listen(socketfd,10);\n\n    for (; ;)\n    {\n        printf(\"Server in ascolto...\");\n        fflush(stdout);\n        soa=accept(socketfd,(struct sockaddr*)&addr_remoto,&fromlen);\n        read(soa,str,sizeof(str));\n        printf(\"Stringa ricevuta: %s\\n\",str);\n        close(soa);\n    }\n    return 0;\n}"
+      },
+      "note": "Questo codice crea un server che si connette al server sulla porta 1313, invia un messaggio e riceve la risposta."
+    },
+    "footer": {
+      "text": "Realizzato da: Bernardinello Tommaso - Classe 5E"
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

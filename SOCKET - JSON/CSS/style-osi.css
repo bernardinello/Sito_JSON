@@ -1,0 +1,54 @@
+/* Hero Section - Sfondo colorato */
+.hero-section {
+    
+    background-color: rgb(119, 44, 57);
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+    border-bottom: 5px solid #ffc107;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+/* Navbar - colore di sfondo e ombre */
+.navbar {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Link nella navbar */
+.nav-link {
+    color: #333; /* Colore di base */
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Colore al passaggio del mouse */
+.nav-link:hover {
+    background-color: #007bff; /* Sfondo blu */
+    color: white; /* Testo bianco */
+}
+
+
+.hero-section p {
+    font-size: 1.3rem;
+}
+
+/* Immagine */
+img {
+    max-width: 90%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Contenitore */
+.container {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+}

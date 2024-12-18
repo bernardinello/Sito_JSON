@@ -1,0 +1,78 @@
+{
+    "html": {
+        "lingua": "it",
+        "body": {
+            "nav": {
+                "class": "navbar navbar-expand-lg navbar-light bg-light shadow-sm",
+                "div": {
+                    "class": "container-fluid",
+                    "a": {
+                        "class": "navbar-brand",
+                        "href": "index.html",
+                        "text": "Socket Learning"
+                    }
+                }
+            },
+            "heroSection": {
+                "class": "hero-section",
+                "div": {
+                    "class": "hero-title-background",
+                    "h1": "Benvenuto nel mondo delle Socket",
+                    "p": "Scopri come le applicazioni comunicano in rete grazie alle socket e ai protocolli di comunicazione."
+                }
+            },
+            "container": {
+                "class": "container mt-5 shadow-box",
+                "h2": "Introduzione alle Socket",
+                "p": "Le socket sono un concetto fondamentale per la comunicazione tra processi in un network. In questo sito, esploreremo il loro funzionamento, le diverse tipologie di socket (come Stream e Datagram), e il processo di comunicazione tra un server e un client. Inoltre, tratteremo concetti correlati a Sistemi e Reti, come il modello OSI e le differenze tra i protocolli TCP e UDP.",
+                "div": {
+                    "class": "alert alert-info",
+                    "role": "alert",
+                    "text": "Naviga attraverso le varie pagine per approfondire i concetti e scoprire il glossario dei termini tecnici."
+                }
+            },
+            "footer": {
+                "class": "bg-light text-center py-3",
+                "p": "Realizzato da: Bernardinello Tommaso - Classe 5E"
+            }
+        }
+    },
+    "css": {
+        "heroSection": {
+            "background": "linear-gradient(135deg, #007bff, #0056b3)",
+            "color": "white",
+            "padding": "100px 0",
+            "textAlign": "center",
+            "h1": {
+                "fontSize": "3.5rem",
+                "fontWeight": "bold",
+                "textShadow": "2px 2px 6px rgba(0, 0, 0, 0.6)"
+            },
+            "p": {
+                "fontSize": "1.5rem",
+                "marginTop": "15px"
+            }
+        },
+        "navbar": {
+            "backgroundColor": "#f8f9fa",
+            "borderBottom": "2px solid #ddd",
+            "boxShadow": "0 4px 6px rgba(0, 0, 0, 0.1)",
+            "navLink": {
+                "color": "#333",
+                "fontWeight": "500",
+                "padding": "10px 15px",
+                "borderRadius": "5px",
+                "transition": "color 0.3s ease, background-color 0.3s ease",
+                "hover": {
+                    "backgroundColor": "#007bff",
+                    "color": "white"
+                }
+            }
+        },
+        "footer": {
+            "backgroundColor": "#f8f9fa",
+            "textAlign": "center",
+            "padding": "20px 0"
+        }
+    }
+}

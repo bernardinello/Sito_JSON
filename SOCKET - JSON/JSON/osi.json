@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Modello OSI",
+  "navbar": {
+    "links": [
+      { "text": "Home", "href": "index.html" },
+      { "text": "Cos'è una Socket?", "href": "socket.html" },
+      { "text": "Modello OSI", "href": "osi.html" },
+      { "text": "TCP vs UDP", "href": "tcpudp.html" },
+      { "text": "Glossario", "href": "glossario.html" }
+    ]
+  },
+  "pageDescription": "Scopri i 7 strati del modello OSI e il loro ruolo nelle comunicazioni di rete.",
+  "osiLayers": [
+    {
+      "name": "Fisico",
+      "description": "Gestisce la trasmissione di bit su un canale fisico, inclusi i cavi, le onde radio, e i segnali elettrici.",
+      "class": "primary"
+    },
+    {
+      "name": "Data Link",
+      "description": "Gestisce la trasmissione di frame tra nodi sulla stessa rete, fornendo anche la gestione degli errori.",
+      "class": "secondary"
+    },
+    {
+      "name": "Network",
+      "description": "Gestisce l'indirizzamento e il routing dei pacchetti tra diverse reti.",
+      "class": "success"
+    },
+    {
+      "name": "Trasporto",
+      "description": "Garantisce una comunicazione end-to-end affidabile tra i dispositivi, attraverso segmenti.",
+      "class": "warning"
+    },
+    {
+      "name": "Sessone",
+      "description": "Gestisce la creazione, la gestione e la terminazione delle sessioni di comunicazione.",
+      "class": "danger"
+    },
+    {
+      "name": "Presentazione",
+      "description": "Gestisce la sintassi dei dati, la cifratura e la compressione, per consentire ai dati di essere comprensibili per entrambi i dispositivi.",
+      "class": "info"
+    },
+    {
+      "name": "Applicazione",
+      "description": "Gestisce l'interazione finale con l'utente o l'applicazione, come la navigazione web o l'invio di email.",
+      "class": "light"
+    }
+  ],
+  "footer": {
+    "text": "Realizzato da: Bernardinello Tommaso - Classe 5E"
+  }
+}

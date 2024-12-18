@@ -1,0 +1,38 @@
+{
+  "pageTitle": "Codice Client - Cos'è una Socket?",
+  "navbar": {
+    "brand": "Socket Learning",
+    "links": [
+      { "text": "Home", "href": "index.html" },
+      {
+        "text": "Cos'è una Socket?",
+        "dropdown": true,
+        "items": [
+          { "text": "Introduzione", "href": "socket.html" },
+          { "text": "Codice Client", "href": "client-code.html" },
+          { "text": "Codice Server", "href": "server-code.html" }
+        ]
+      },
+      { "text": "Modello OSI", "href": "osi.html" },
+      { "text": "TCP vs UDP", "href": "tcpudp.html" },
+      { "text": "Glossario", "href": "glossario.html" }
+    ]
+  },
+  "pageDescription": "Il codice per implementare un client socket in C.",
+  "heroSection": {
+    "title": "Codice Client",
+    "subtitle": "Il codice per implementare un client socket in C."
+  },
+  "content": {
+    "sectionTitle": "Esempio di Codice Client",
+    "description": "Qui puoi vedere un esempio di codice client in C per creare una connessione socket con un server.",
+    "code": {
+      "language": "c",
+      "content": "//CLIENT\n#include <stdio.h>       //std in-out\n#include <stdlib.h>      //per utilizzo di certe funzioni:htonl,rand,....\n#include <sys/socket.h>  //funz. accept+bind+listen\n#include <sys/types.h>   //funz. accept\n#include <netinet/in.h>  //definiscono la struttura degli indirizzi \n#include <string.h>      //funz. stringhe\n#include <errno.h>       //gestioni errori connessione\n#include <ctype.h>       //bind\n#include <unistd.h>     // file header che consente l'accesso alle API dello standard POSIX\n\n#define DIM 50\n#define SERVERPORT 1313\n\nint main(int argc,char** argv)\n{   //creazione di un elemento di tipo sockaddr vedi pagina 162\n    struct sockaddr_in servizio;\n     //inizializzazione dell'elemento di tipo sockaddr\n    servizio.sin_family=AF_INET;\n    servizio.sin_addr.s_addr=htonl(INADDR_ANY); //  La funzione htonl accetta un numero a 32 bit in ordine di byte host e restituisce un numero a 32 bit nell'ordine dei byte di rete usato nelle reti TCP/IP (la famiglia di indirizzi AF_INET o AF_INET6).\n    servizio.sin_port=htons(SERVERPORT);       //La funzione htons accetta un numero a 16 bit nell'ordine dei byte host e restituisce un numero a 16 bit nell'ordine dei byte di rete usato nelle reti TCP/IP (la famiglia di indirizzi AF_INET o AF_INET6).\n    char str1[DIM];     //Stringa da inviare\n    int socketfd;// identificatore della socket\n    //creazione e definizione del Socket di tipo stream tcp pg 163\n    socketfd=socket(AF_INET,SOCK_STREAM,0);\n    //connessione al server pag.173\n    connect(socketfd,(struct sockaddr*)&servizio,sizeof(servizio));    \n    printf(\"Inserisci la stringa\\n\");\n    scanf(\"%s\",str1);\n    write(socketfd,str1,sizeof(str1));\n    close(socketfd);\n    return 0;\n}"
+    },
+    "note": "Questo codice crea un client che si connette al server sulla porta 1313, invia un messaggio e riceve la risposta."
+  },
+  "footer": {
+    "text": "Realizzato da: Bernardinello Tommaso - Classe 5E"
+  }
+}

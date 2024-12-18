@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style-osi.css">
+    <title>Modello OSI</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Socket Learning</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbarLinks">
+                <!-- I link della navbar verranno aggiunti dinamicamente -->
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <!-- Sezione Hero -->
+  <div class="hero-section">
+    <div class="hero-title-background">
+        <h1></h1>
+        <p></p>
+    </div>
+  </div>
+
+  <!-- Contenuto della pagina -->
+  <div class="container mt-5 shadow-box">
+    <h2 class="text-center">I 7 Strati del Modello OSI</h2>
+    <p class="lead text-center mb-5">
+        Il modello OSI (Open Systems Interconnection) è un framework che descrive come i dati viaggiano da un dispositivo all'altro attraverso la rete.
+    </p>
+
+    <div class="text-center mb-4">
+        <img src="https://www.comefunziona.net/img/fig1-1.jpg" alt="Modello OSI" class="img-fluid" style="max-width: 80%; border-radius: 10px;">
+    </div>
+
+    <p>
+        Il modello OSI è diviso in sette strati, ognuno dei quali ha una funzione specifica nella comunicazione di rete. Di seguito sono descritti i 7 strati:
+    </p>
+
+    <!-- Lista degli strati -->
+    <ul class="list-group mb-5" id="osiLayersContainer">
+        <!-- Gli strati del modello OSI verranno aggiunti dinamicamente -->
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-3">
+    <p></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  <script src="../JS/osi.js"></script>
+</body>
+</html>

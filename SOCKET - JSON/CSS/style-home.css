@@ -1,0 +1,71 @@
+/* Hero Section - Sfondo con gradiente */
+.hero-section {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Navbar - colore di sfondo e ombre */
+.navbar {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Link nella navbar */
+.nav-link {
+    color: #333; /* Colore di base */
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Colore al passaggio del mouse */
+.nav-link:hover {
+    background-color: #007bff; /* Sfondo blu */
+    color: white; /* Testo bianco */
+}
+
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+/* Bottone */
+.btn-primary {
+    background-color: #ffdd57;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-primary:hover {
+    background-color: #ffc107;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: white;
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px 0;
+}

@@ -1,0 +1,29 @@
+{
+  "pageTitle": "Tipologia di Socket",
+  "navbar": {
+    "linkText": "← Torna a Cos'è una Socket?",
+    "href": "socket.html"
+  },
+  "content": {
+    "header": "Tipologie di Socket",
+    "description": "Esistono due principali tipi di socket utilizzati nelle comunicazioni di rete:",
+    "listItems": [
+      {
+        "title": "Socket di Stream",
+        "description": "Utilizzano TCP e garantiscono una trasmissione affidabile."
+      },
+      {
+        "title": "Socket di Datagram",
+        "description": "Utilizzano UDP, ideali per trasmissioni rapide."
+      }
+    ],
+    "image": {
+      "src": "https://blogger.googleusercontent.com/img/a/AVvXsEgkWYKq59xdo4sLe4Xf6hOFbjfug37DSBBUW83ugPNXWAqKtGdkbuNSK72n7YA9X1iQn1YZ7G_yfwDXuEPUlFGkCP4PVirSszDOtstuLYTEWIeKiyE3mxzAvH3BkN6SFtO1R2_x5H-mXazr6iQhvfxp5zqxvD2SuhEXmyul7RONFlN2k0xRZGfKwLz0fg=w400-h205",
+      "alt": "Tipi di Socket"
+    }
+  },
+  "footer": {
+    "text": "Realizzato da: Bernardinello Tommaso - Classe 5E",
+    "smallText": "&copy; 2024 Socket Learning. All rights reserved."
+  }
+}
